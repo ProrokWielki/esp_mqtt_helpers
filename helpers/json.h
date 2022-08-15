@@ -12,7 +12,7 @@ std::string json_entry(std::pair<std::string, std::string> entry)
 std::string json_entry(std::pair<std::string, double> entry)
 {
     std::stringstream ss;
-    ss << std::setprecision(2) << entry.second;
+    ss << std::setprecision(2) << std::fixed << std::showpoint << entry.second;
 
     return "\"" + entry.first + "\": \"" + ss.str() + "\"";
 }
