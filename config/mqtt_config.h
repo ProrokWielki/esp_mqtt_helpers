@@ -1,5 +1,4 @@
-#ifndef MQTT_CONFIG_H_
-#define MQTT_CONFIG_H_
+#pragma once
 
 #include "wifi_config.h"
 
@@ -13,5 +12,3 @@ constexpr auto password = "MQTT Password";
 
 constexpr auto client_id = wifi::hostname;
 }  // namespace mqtt
-
-#endif /* MQTT_CONFIG_H_ */

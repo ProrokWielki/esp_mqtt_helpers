@@ -14,5 +14,3 @@ void subscribe(PubSubClient & mqtt, const std::map<std::string, std::function<vo
 }
 
 }  // namespace mqtt
-
-#endif /* MQTT_H_ */

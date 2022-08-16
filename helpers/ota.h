@@ -17,5 +17,3 @@ inline void handle()
     ArduinoOTA.handle();
 }
 }  // namespace ota
-
-#endif /* OTA_H_ */
