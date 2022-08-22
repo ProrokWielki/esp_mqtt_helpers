@@ -1,5 +1,7 @@
 #pragma once
 
+#include <map>
+
 #include <PubSubClient.h>
 
 namespace mqtt
