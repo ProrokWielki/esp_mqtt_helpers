@@ -3,12 +3,13 @@
 #include <bits/stdc++.h>
 #include <string>
 
-void wait_for_initialization(std::function<bool(void)> checker, uint8_t max_number_of_retries = 0, std::function<void(void)> failure_action = nullptr)
+void wait_for_initialization(std::function<bool(void)> checker, uint8_t max_number_of_retries = 0, std::function<void(void)> failure_action = nullptr,
+                             uint32_t wait_time = 500)
 {
     uint8_t current_retry = 0;
     while (checker())
     {
-        delay(500);
+        delay(wait_time);
 
         if (max_number_of_retries == 0)
         {
